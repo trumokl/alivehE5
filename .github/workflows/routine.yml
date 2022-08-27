@@ -2,12 +2,12 @@ name: Invoke API
 
 on:
   schedule:
-    - cron: '32 */8 * * *'
+    - cron: '23 */6 * * *'
   workflow_dispatch:
 
 jobs:
   invoke:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
